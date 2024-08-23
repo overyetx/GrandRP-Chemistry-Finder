@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand RP - Chemistry Finder</title>
+    <style>
+        body {
+            background: #1F1F1F;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #E1E1E1;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input, button {
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grand RP - Chemistry Finder</h1>
+	<div style="display:flex;width:100%;">
+		<div style="width:50%;">
+			<label for="element">Enter an element name:</label>
+			<input type="text" id="element" placeholder="e.g., Dragonfly, Beast, ..." onkeydown="if (event.key == 'Enter'){findRecipe();}">
+			<button onclick="findRecipe()">Find</button>
+			<div id="result"></div>
+		</div>
+		<ul id="allrecipes" style="width:50%;">
+		</ul>
+	</div>
+
+    <script src="index.js?2"></script>
+</body>
+</html>
